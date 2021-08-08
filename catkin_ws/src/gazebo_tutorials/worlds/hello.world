@@ -77,20 +77,20 @@
       <collision name='collision'>
       <geometry>
       <sphere>
-            <radius>0.2</radius>
+            <radius>0.15</radius>
           </sphere>
         </geometry>
       </collision>
           <visual name="visual">
             <geometry>
             <sphere>
-                  <radius>0.2</radius>
+                  <radius>0.15</radius>
                 </sphere>
             </geometry>
           </visual>
         </link>
         <plugin name="sphere_plug" filename="libgazebo_tutorials.so">
-        <target>3 2 1.24</target>
+        <target>3 2 0</target>
         <target_weight>1.15</target_weight>
         <obstacle_weight>1.8</obstacle_weight>
         <ignore_obstacles>
@@ -114,20 +114,20 @@
       <collision name='collision'>
       <geometry>
       <sphere>
-            <radius>0.2</radius>
+            <radius>0.15</radius>
           </sphere>
         </geometry>
       </collision>
           <visual name="visual">
             <geometry>
             <sphere>
-                  <radius>0.2</radius>
+                  <radius>0.15</radius>
                 </sphere>
             </geometry>
           </visual>
         </link>
         <plugin name="sphere_2_plug" filename="libgazebo_tutorials.so">
-        <target>3 2 1.24</target>
+        <target>3 2 0</target>
         <target_weight>1.15</target_weight>
         <obstacle_weight>1.8</obstacle_weight>
         <ignore_obstacles>
