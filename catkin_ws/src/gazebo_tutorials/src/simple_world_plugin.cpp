@@ -126,7 +126,7 @@ namespace gazebo
       if (this->sdf && this->sdf->HasElement("target"))
         this->target = this->sdf->Get<ignition::math::Vector3d>("target");
       else
-        this->target = ignition::math::Vector3d(0, -5, 1.2138);
+        this->target = ignition::math::Vector3d(3, 2, 0);
     }
 
     void ChooseNewTarget()
@@ -175,8 +175,6 @@ namespace gazebo
     // Called by the world update start event
     void OnUpdate(const common::UpdateInfo &_info)
     {
-      // Apply a small linear velocity to the model.
-      //this->model->SetLinearVel(ignition::math::Vector3d(.3, 0, 0));
 
       // Time delta
       double dt = (_info.simTime - this->lastUpdate).Double();
