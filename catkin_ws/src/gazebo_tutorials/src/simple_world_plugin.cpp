@@ -2,7 +2,69 @@
 #include <gazebo/gazebo.hh>
 #include <gazebo/physics/physics.hh>
 #include <gazebo/common/common.hh>
+#include <ignition/math.hh>
 #include <ignition/math/Vector3.hh>
+#include <gazebo/sensors/sensors.hh>
+#include "gazebo/physics/Contact.hh"
+
+namespace gazebo
+{
+  using namespace sensors;
+
+  GZ_REGISTER_STATIC_SENSOR("contact", ContactSensor)
+  class ContactPlugin : public SensorPlugin
+  {
+  public:
+    void Load(sensors::SensorPtr _sensor, sdf::ElementPtr /*_sdf*/)
+    {
+      // Get the parent sensor.
+      this->parentSensor =
+          std::dynamic_pointer_cast<sensors::ContactSensor>(_sensor);
+
+      // Make sure the parent sensor is valid.
+      if (!this->parentSensor)
+      {
+        gzerr << "ContactPlugin requires a ContactSensor.\n";
+        return;
+      }
+      std::cout << "\nCONTACT PLUGIN OK......" << std::endl;
+      // Connect to the sensor update event.
+      this->updateConnection = this->parentSensor->ConnectUpdated(
+          std::bind(&ContactPlugin::OnUpdate, this));
+
+      // Make sure the parent sensor is active.
+      this->parentSensor->SetActive(true);
+    }
+
+  private:
+    void OnUpdate()
+    { // Get all the contacts.
+      // msgs::Contacts contacts;
+      // contacts = this->parentSensor->Contacts();
+      // for (unsigned int i = 0; i < contacts.contact_size(); ++i)
+      // {
+      //   std::cout << "Collision between[" << contacts.contact(i).collision1()
+      //             << "] and [" << contacts.contact(i).collision2() << "]\n";
+
+      //   for (unsigned int j = 0; j < contacts.contact(i).position_size(); ++j)
+      //   {
+      //     std::cout << j << "  Position:"
+      //               << contacts.contact(i).position(j).x() << " "
+      //               << contacts.contact(i).position(j).y() << " "
+      //               << contacts.contact(i).position(j).z() << "\n";
+      //     std::cout << "   Normal:"
+      //               << contacts.contact(i).normal(j).x() << " "
+      //               << contacts.contact(i).normal(j).y() << " "
+      //               << contacts.contact(i).normal(j).z() << "\n";
+      //     std::cout << "   Depth:" << contacts.contact(i).depth(j) << "\n";
+      //   }
+      // }
+    }
+    sensors::ContactSensorPtr parentSensor;
+    event::ConnectionPtr updateConnection;
+  };
+  // GZ_REGISTER_SENSOR_PLUGIN(ContactPlugin)
+}
 
 namespace gazebo
 {
@@ -15,7 +77,9 @@ namespace gazebo
       this->sdf = _sdf;
       this->model = _parent;
       this->world = this->model->GetWorld();
-      std::cout << model->WorldPose().Pos() << std::endl;
+
+      
+      // std::cout << model->WorldPose().Pos() << std::endl;
       // Listen to the update event. This event is broadcast every
       // simulation iteration.
       this->updateConnection.push_back(event::Events::ConnectWorldUpdateBegin(
@@ -53,7 +117,7 @@ namespace gazebo
     /////////////////////////////////////////////////
     void Reset()
     {
-      this->velocity = 0.8;
+      this->velocity = 1.0;
       this->lastUpdate = 0;
 
       if (this->sdf && this->sdf->HasElement("target"))
@@ -113,7 +177,7 @@ namespace gazebo
 
       // Time delta
       double dt = (_info.simTime - this->lastUpdate).Double();
-
+  
       ignition::math::Pose3d pose = this->model->WorldPose();
       ignition::math::Vector3d pos = this->target - pose.Pos();
       ignition::math::Vector3d rpy = pose.Rot().Euler();
@@ -145,10 +209,10 @@ namespace gazebo
       }
       else
       {
-        // pose.Pos() += pos * this->velocity * dt;
-        this->model->SetLinearVel(ignition::math::Vector3d(pos * this->velocity * dt));
-        // pose.Rot() = ignition::math::Quaterniond(1.5707, 0, rpy.Z() + yaw.Radian());
-        this->model->SetAngularVel (ignition::math::Vector3d(1.5707, 0, rpy.Z() + yaw.Radian()));
+        pose.Pos() += pos * this->velocity * dt;
+        // this->model->SetLinearVel(pose.Pos());
+        pose.Rot() = ignition::math::Quaterniond(1.5707, 0, rpy.Z() + yaw.Radian());
+        this->model->SetAngularVel(ignition::math::Vector3d(rpy.Z() + yaw.Radian(), 0, rpy.Z() + yaw.Radian()));
       }
 
       // Make sure the model stays within bounds

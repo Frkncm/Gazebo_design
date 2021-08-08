@@ -17,31 +17,31 @@
 
     <include>
       <name>table1</name>
-      <pose>0.5 -1.6 0.2 0 0 0</pose>
+      <pose>0.5 -1.6 0 0 0 0</pose>
       <uri>model://cafe_table</uri>
     </include>
 
     <include>
       <name>table2</name>
-      <pose>2.4 -5.5 0.2 0 0 0</pose>
+      <pose>2.4 -5.5 0 0 0 0</pose>
       <uri>model://cafe_table</uri>
     </include>
 
     <include>
       <name>table3</name>
-      <pose>-1.5 -5.5 0.2 0 0 0</pose>
+      <pose>-1.5 -5.5 0 0 0 0</pose>
       <uri>model://cafe_table</uri>
     </include>
 
     <include>
       <name>table4</name>
-      <pose>2.4 -9 0.2 0 0 0</pose>
+      <pose>2.4 -9 0 0 0 0</pose>
       <uri>model://cafe_table</uri>
     </include>
 
     <include>
       <name>table5</name>
-      <pose>-1.5 -9 0.2 0 0 0</pose>
+      <pose>-1.5 -9 0 0 0 0</pose>
       <uri>model://cafe_table</uri>
     </include>
 
@@ -70,65 +70,75 @@
 
     <!-- reference to your plugin -->
 
-    <model name="box_model">
+    <model name="sphere_model">
     <static> false </static>
-      <pose>0 1 0.1 0 0 0</pose>
-      <link name="box_link">
-
+      <pose>0 1 0 0 0 0</pose>
+      <link name="sphere_link">
       <collision name='collision'>
       <geometry>
-        <box>
-          <size>.2 .2 .2</size>
-         </box>
+      <sphere>
+            <radius>0.2</radius>
+          </sphere>
         </geometry>
       </collision>
-
           <visual name="visual">
             <geometry>
-              <box>
-                <size>.2 .2 .2</size>
-              </box>
+            <sphere>
+                  <radius>0.2</radius>
+                </sphere>
             </geometry>
           </visual>
         </link>
-        <plugin name="box_plug" filename="libgazebo_tutorials.so">
+        <plugin name="sphere_plug" filename="libgazebo_tutorials.so">
         <target>3 2 1.24</target>
         <target_weight>1.15</target_weight>
         <obstacle_weight>1.8</obstacle_weight>
         <ignore_obstacles>
           <model>ground_plane</model>
+          <model>turtlebot3_burger</model>
         </ignore_obstacles>
+        <sensor name='sphere_contact_1' type='contact'>
+          <contact>
+            <collision>sphere_collision</collision>
+          </contact>
+        </sensor>
         </plugin>
     </model>
 
-    <model name="box_model_2">
-    <static> false </static>
-      <pose>1 1 0.1 0 0 0</pose>
-      <link name="box_link_2">
 
+
+    <model name="sphere_model_2">
+    <static> false </static>
+      <pose>1 1 0 0 0 0</pose>
+      <link name="sphere_link_2">
       <collision name='collision'>
       <geometry>
-        <box>
-          <size>.2 .2 .2</size>
-         </box>
+      <sphere>
+            <radius>0.2</radius>
+          </sphere>
         </geometry>
       </collision>
-
           <visual name="visual">
             <geometry>
-              <box>
-                <size>.2 .2 .2</size>
-              </box>
+            <sphere>
+                  <radius>0.2</radius>
+                </sphere>
             </geometry>
           </visual>
         </link>
-        <plugin name="box_2_plug" filename="libgazebo_tutorials.so">
+        <plugin name="sphere_2_plug" filename="libgazebo_tutorials.so">
         <target>3 2 1.24</target>
         <target_weight>1.15</target_weight>
         <obstacle_weight>1.8</obstacle_weight>
         <ignore_obstacles>
           <model>ground_plane</model>
+          <model>turtlebot3_burger</model>
         </ignore_obstacles>
+        <sensor name='sphere_contact_2' type='contact'>
+          <contact>
+            <collision>sphere_collision</collision>
+          </contact>
+        </sensor>
         </plugin>
     </model>
 
