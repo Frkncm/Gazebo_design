@@ -78,7 +78,6 @@ namespace gazebo
       this->model = _parent;
       this->world = this->model->GetWorld();
 
-      
       // std::cout << model->WorldPose().Pos() << std::endl;
       // Listen to the update event. This event is broadcast every
       // simulation iteration.
@@ -112,9 +111,6 @@ namespace gazebo
           modelElem = modelElem->GetNextElement("model");
         }
       }
-
-      std::cout << this->targetWeight << " " << this->obstacleWeight << " " << std::endl;
-
     }
 
     /////////////////////////////////////////////////
@@ -178,7 +174,7 @@ namespace gazebo
 
       // Time delta
       double dt = (_info.simTime - this->lastUpdate).Double();
-  
+
       ignition::math::Pose3d pose = this->model->WorldPose();
       ignition::math::Vector3d pos = this->target - pose.Pos();
       ignition::math::Vector3d rpy = pose.Rot().Euler();
