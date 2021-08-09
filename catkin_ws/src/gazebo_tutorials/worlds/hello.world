@@ -21,6 +21,12 @@
       <uri>model://sun</uri>
     </include>
 
+    <include>
+      <name>labyrinth</name>
+      <pose>0 0 -2 0 0 0</pose>
+      <uri>model://my_labyrinth</uri>
+    </include>
+
     <physics type="ode">
       <real_time_update_rate>1000.0</real_time_update_rate>
       <max_step_size>0.001</max_step_size>
@@ -46,16 +52,22 @@
 
     <!-- reference to your plugin -->
 
-    <model name="sphere_model">
+    <model name="box_model">
     <static> false </static>
       <pose>0 1 0 0 0 0</pose>
-      <link name="sphere_link">
+      <link name="box_link">
+       <gravity>0</gravity>
       <collision name='collision'>
       <geometry>
          <box>
             <size>.2 .2 .2</size>
           </box>
         </geometry>
+        <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
       </collision>
           <visual name="visual">
             <geometry>
@@ -65,17 +77,17 @@
             </geometry>
           </visual>
         </link>
-        <plugin name="sphere_plug" filename="libgazebo_tutorials.so">
-        <target>3 2 0</target>
+        <plugin name="box_plug" filename="libgazebo_tutorials.so">
+        <target>3 2 0.1</target>
         <target_weight>1.15</target_weight>
         <obstacle_weight>1.8</obstacle_weight>
         <ignore_obstacles>
           <model>ground_plane</model>
           <model>turtlebot3_burger</model>
         </ignore_obstacles>
-        <sensor name='sphere_contact_1' type='contact'>
+        <sensor name='box_contact_1' type='contact'>
           <contact>
-            <collision>sphere_collision</collision>
+            <collision>box_collision</collision>
           </contact>
         </sensor>
         </plugin>
@@ -83,36 +95,42 @@
 
 
 
-    <model name="sphere_model_2">
+    <model name="box_model_2">
     <static> false </static>
       <pose>1 1 0 0 0 0</pose>
-      <link name="sphere_link_2">
+      <link name="box_link_2">
+       <gravity>0</gravity>
       <collision name='collision'>
-      <geometry>
-      <box>
-         <size>.2 .2 .2</size>
-       </box>
+        <geometry>
+          <box>
+            <size>.2 .2 .2</size>
+          </box>
         </geometry>
+        <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
       </collision>
-          <visual name="visual">
-            <geometry>
+        <visual name="visual">
+          <geometry>
             <box>
                <size>.2 .2 .2</size>
              </box>
             </geometry>
           </visual>
         </link>
-        <plugin name="sphere_2_plug" filename="libgazebo_tutorials.so">
-        <target>3 2 0</target>
+        <plugin name="box_2_plug" filename="libgazebo_tutorials.so">
+        <target>3 2 0.1</target>
         <target_weight>1.15</target_weight>
         <obstacle_weight>1.8</obstacle_weight>
         <ignore_obstacles>
           <model>ground_plane</model>
           <model>turtlebot3_burger</model>
         </ignore_obstacles>
-        <sensor name='sphere_contact_2' type='contact'>
+        <sensor name='box_contact_2' type='contact'>
           <contact>
-            <collision>sphere_collision</collision>
+            <collision>box_collision</collision>
           </contact>
         </sensor>
         </plugin>

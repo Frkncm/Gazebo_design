@@ -122,7 +122,7 @@ namespace gazebo
       if (this->sdf && this->sdf->HasElement("target"))
         this->target = this->sdf->Get<ignition::math::Vector3d>("target");
       else
-        this->target = ignition::math::Vector3d(3, 2, 0);
+        this->target = ignition::math::Vector3d(3, 2, 0.1);
     }
 
     void ChooseNewTarget()
@@ -157,7 +157,7 @@ namespace gazebo
           ignition::math::Vector3d offset = model->WorldPose().Pos() -
                                             this->model->WorldPose().Pos();
           double modelDist = offset.Length();
-          if (modelDist < 4.0)
+          if (modelDist < 0.2)
           {
             double invModelDist = this->obstacleWeight / modelDist;
             offset.Normalize();
@@ -183,7 +183,7 @@ namespace gazebo
 
       // Choose a new target position if the model has reached its current
       // target.
-      if (distance < 0.3)
+      if (distance < 0.2)
       {
         this->ChooseNewTarget();
         pos = this->target - pose.Pos();
@@ -215,7 +215,7 @@ namespace gazebo
       // Make sure the model stays within bounds
       pose.Pos().X(std::max(-10.0, std::min(10.0, pose.Pos().X())));
       pose.Pos().Y(std::max(-10.0, std::min(10.0, pose.Pos().Y())));
-      pose.Pos().Z(0);
+      pose.Pos().Z(0.1);
 
       // Distance traveled is used to coordinate motion with the walking
       // animation
