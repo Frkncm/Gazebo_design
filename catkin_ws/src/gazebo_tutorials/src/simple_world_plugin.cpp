@@ -119,10 +119,11 @@ namespace gazebo
       this->velocity = 0.8;
       this->lastUpdate = 0;
 
-      if (this->sdf && this->sdf->HasElement("target"))
-        this->target = this->sdf->Get<ignition::math::Vector3d>("target");
-      else
-        this->target = ignition::math::Vector3d(3, 2, 0.1);
+      // if (this->sdf && this->sdf->HasElement("target"))
+      //   this->target = this->sdf->Get<ignition::math::Vector3d>("target");
+      // else
+      //   this->target = ignition::math::Vector3d(3, 2, 0.1);
+      ChooseNewTarget();
     }
 
     void ChooseNewTarget()
