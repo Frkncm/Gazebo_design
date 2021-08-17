@@ -14,7 +14,7 @@
         <static>true</static>
         <use_model_frame>true</use_model_frame>
         <xyz>-5 0 3</xyz>
-        <inherit_yaw>false</inherit_yaw>
+        <inherit_yaw>true</inherit_yaw>
       </track_visual>
       </camera>
     </gui>
@@ -27,10 +27,38 @@
       <uri>model://sun</uri>
     </include>
 
+    <!--
     <include>
       <name>labyrinth</name>
-      <pose>0 0 -2 0 0 0</pose>
+      <pose>0 0 -2.3 0 0 0</pose>
       <uri>model://my_labyrinth</uri>
+    </include>
+    -->
+
+    <include>
+      <name>challenging_path_1_update_2</name>
+      <pose>0 0 -2.3 0 0 0</pose>
+      <uri>model://challenging_path_1_update_2</uri>
+    </include>
+
+    <include>
+      <name>gameover_sign</name>
+      <pose>-9.5 -12.5 0 0 0 0</pose>
+      <uri>model://gameover_sign</uri>
+    </include>
+
+    <!-- Start signal model -->
+    <include>
+      <name>start_sign_cube</name>
+      <pose>-4.86 -4.23 0 0 0 1.63</pose>
+      <uri>model://start_sign_cube</uri>
+    </include>
+
+    <!-- Finish signal model -->
+    <include>
+      <name>finish_sign</name>
+      <pose> 5.25 -2.62 0 0 0 0</pose>
+      <uri>model://finish_sign</uri>
     </include>
 
     <physics type="ode">
@@ -104,6 +132,21 @@
           <model>box_model_13</model>
           <model>box_model_14</model>
           <model>box_model_15</model>
+          <model>box_model_16</model>
+          <model>box_model_17</model>
+          <model>box_model_18</model>
+          <model>box_model_19</model>
+          <model>box_model_20</model>
+          <model>box_model_21</model>
+          <model>box_model_22</model>
+          <model>box_model_23</model>
+          <model>box_model_24</model>
+          <model>box_model_25</model>
+          <model>box_model_26</model>
+          <model>box_model_27</model>
+          <model>box_model_28</model>
+          <model>box_model_29</model>
+          <model>box_model_30</model>
         </ignore_obstacles>
         </plugin>
     </model>
@@ -156,6 +199,21 @@
           <model>box_model_13</model>
           <model>box_model_14</model>
           <model>box_model_15</model>
+          <model>box_model_16</model>
+          <model>box_model_17</model>
+          <model>box_model_18</model>
+          <model>box_model_19</model>
+          <model>box_model_20</model>
+          <model>box_model_21</model>
+          <model>box_model_22</model>
+          <model>box_model_23</model>
+          <model>box_model_24</model>
+          <model>box_model_25</model>
+          <model>box_model_26</model>
+          <model>box_model_27</model>
+          <model>box_model_28</model>
+          <model>box_model_29</model>
+          <model>box_model_30</model>
         </ignore_obstacles>
         </plugin>
     </model>
@@ -206,6 +264,21 @@
           <model>box_model_13</model>
           <model>box_model_14</model>
           <model>box_model_15</model>
+          <model>box_model_16</model>
+          <model>box_model_17</model>
+          <model>box_model_18</model>
+          <model>box_model_19</model>
+          <model>box_model_20</model>
+          <model>box_model_21</model>
+          <model>box_model_22</model>
+          <model>box_model_23</model>
+          <model>box_model_24</model>
+          <model>box_model_25</model>
+          <model>box_model_26</model>
+          <model>box_model_27</model>
+          <model>box_model_28</model>
+          <model>box_model_29</model>
+          <model>box_model_30</model>
         </ignore_obstacles>
         </plugin>
     </model>
@@ -257,6 +330,21 @@
           <model>box_model_13</model>
           <model>box_model_14</model>
           <model>box_model_15</model>
+          <model>box_model_16</model>
+          <model>box_model_17</model>
+          <model>box_model_18</model>
+          <model>box_model_19</model>
+          <model>box_model_20</model>
+          <model>box_model_21</model>
+          <model>box_model_22</model>
+          <model>box_model_23</model>
+          <model>box_model_24</model>
+          <model>box_model_25</model>
+          <model>box_model_26</model>
+          <model>box_model_27</model>
+          <model>box_model_28</model>
+          <model>box_model_29</model>
+          <model>box_model_30</model>
         </ignore_obstacles>
         </plugin>
     </model>
@@ -308,6 +396,21 @@
           <model>box_model_13</model>
           <model>box_model_14</model>
           <model>box_model_15</model>
+          <model>box_model_16</model>
+          <model>box_model_17</model>
+          <model>box_model_18</model>
+          <model>box_model_19</model>
+          <model>box_model_20</model>
+          <model>box_model_21</model>
+          <model>box_model_22</model>
+          <model>box_model_23</model>
+          <model>box_model_24</model>
+          <model>box_model_25</model>
+          <model>box_model_26</model>
+          <model>box_model_27</model>
+          <model>box_model_28</model>
+          <model>box_model_29</model>
+          <model>box_model_30</model>
         </ignore_obstacles>
         </plugin>
     </model>
@@ -359,6 +462,21 @@
           <model>box_model_13</model>
           <model>box_model_14</model>
           <model>box_model_15</model>
+          <model>box_model_16</model>
+          <model>box_model_17</model>
+          <model>box_model_18</model>
+          <model>box_model_19</model>
+          <model>box_model_20</model>
+          <model>box_model_21</model>
+          <model>box_model_22</model>
+          <model>box_model_23</model>
+          <model>box_model_24</model>
+          <model>box_model_25</model>
+          <model>box_model_26</model>
+          <model>box_model_27</model>
+          <model>box_model_28</model>
+          <model>box_model_29</model>
+          <model>box_model_30</model>
         </ignore_obstacles>
         </plugin>
     </model>
@@ -410,11 +528,26 @@
           <model>box_model_13</model>
           <model>box_model_14</model>
           <model>box_model_15</model>
+          <model>box_model_16</model>
+          <model>box_model_17</model>
+          <model>box_model_18</model>
+          <model>box_model_19</model>
+          <model>box_model_20</model>
+          <model>box_model_21</model>
+          <model>box_model_22</model>
+          <model>box_model_23</model>
+          <model>box_model_24</model>
+          <model>box_model_25</model>
+          <model>box_model_26</model>
+          <model>box_model_27</model>
+          <model>box_model_28</model>
+          <model>box_model_29</model>
+          <model>box_model_30</model>
         </ignore_obstacles>
         </plugin>
     </model>
 
-
+    <!--
     <model name="box_model_8">
     <static> false </static>
       <pose>1 1 0 0 0 0</pose>
@@ -461,6 +594,21 @@
           <model>box_model_13</model>
           <model>box_model_14</model>
           <model>box_model_15</model>
+          <model>box_model_16</model>
+          <model>box_model_17</model>
+          <model>box_model_18</model>
+          <model>box_model_19</model>
+          <model>box_model_20</model>
+          <model>box_model_21</model>
+          <model>box_model_22</model>
+          <model>box_model_23</model>
+          <model>box_model_24</model>
+          <model>box_model_25</model>
+          <model>box_model_26</model>
+          <model>box_model_27</model>
+          <model>box_model_28</model>
+          <model>box_model_29</model>
+          <model>box_model_30</model>
         </ignore_obstacles>
         </plugin>
     </model>
@@ -512,6 +660,21 @@
           <model>box_model_13</model>
           <model>box_model_14</model>
           <model>box_model_15</model>
+          <model>box_model_16</model>
+          <model>box_model_17</model>
+          <model>box_model_18</model>
+          <model>box_model_19</model>
+          <model>box_model_20</model>
+          <model>box_model_21</model>
+          <model>box_model_22</model>
+          <model>box_model_23</model>
+          <model>box_model_24</model>
+          <model>box_model_25</model>
+          <model>box_model_26</model>
+          <model>box_model_27</model>
+          <model>box_model_28</model>
+          <model>box_model_29</model>
+          <model>box_model_30</model>
         </ignore_obstacles>
         </plugin>
     </model>
@@ -563,6 +726,21 @@
           <model>box_model_13</model>
           <model>box_model_14</model>
           <model>box_model_15</model>
+          <model>box_model_16</model>
+          <model>box_model_17</model>
+          <model>box_model_18</model>
+          <model>box_model_19</model>
+          <model>box_model_20</model>
+          <model>box_model_21</model>
+          <model>box_model_22</model>
+          <model>box_model_23</model>
+          <model>box_model_24</model>
+          <model>box_model_25</model>
+          <model>box_model_26</model>
+          <model>box_model_27</model>
+          <model>box_model_28</model>
+          <model>box_model_29</model>
+          <model>box_model_30</model>
         </ignore_obstacles>
         </plugin>
     </model>
@@ -614,6 +792,21 @@
           <model>box_model_13</model>
           <model>box_model_14</model>
           <model>box_model_15</model>
+          <model>box_model_16</model>
+          <model>box_model_17</model>
+          <model>box_model_18</model>
+          <model>box_model_19</model>
+          <model>box_model_20</model>
+          <model>box_model_21</model>
+          <model>box_model_22</model>
+          <model>box_model_23</model>
+          <model>box_model_24</model>
+          <model>box_model_25</model>
+          <model>box_model_26</model>
+          <model>box_model_27</model>
+          <model>box_model_28</model>
+          <model>box_model_29</model>
+          <model>box_model_30</model>
         </ignore_obstacles>
         </plugin>
     </model>
@@ -665,6 +858,21 @@
           <model>box_model_13</model>
           <model>box_model_14</model>
           <model>box_model_15</model>
+          <model>box_model_16</model>
+          <model>box_model_17</model>
+          <model>box_model_18</model>
+          <model>box_model_19</model>
+          <model>box_model_20</model>
+          <model>box_model_21</model>
+          <model>box_model_22</model>
+          <model>box_model_23</model>
+          <model>box_model_24</model>
+          <model>box_model_25</model>
+          <model>box_model_26</model>
+          <model>box_model_27</model>
+          <model>box_model_28</model>
+          <model>box_model_29</model>
+          <model>box_model_30</model>
         </ignore_obstacles>
         </plugin>
     </model>
@@ -718,6 +926,21 @@
           <model>box_model_12</model>
           <model>box_model_14</model>
           <model>box_model_15</model>
+          <model>box_model_16</model>
+          <model>box_model_17</model>
+          <model>box_model_18</model>
+          <model>box_model_19</model>
+          <model>box_model_20</model>
+          <model>box_model_21</model>
+          <model>box_model_22</model>
+          <model>box_model_23</model>
+          <model>box_model_24</model>
+          <model>box_model_25</model>
+          <model>box_model_26</model>
+          <model>box_model_27</model>
+          <model>box_model_28</model>
+          <model>box_model_29</model>
+          <model>box_model_30</model>
         </ignore_obstacles>
         </plugin>
     </model>
@@ -770,6 +993,21 @@
           <model>box_model_12</model>
           <model>box_model_13</model>
           <model>box_model_15</model>
+          <model>box_model_16</model>
+          <model>box_model_17</model>
+          <model>box_model_18</model>
+          <model>box_model_19</model>
+          <model>box_model_20</model>
+          <model>box_model_21</model>
+          <model>box_model_22</model>
+          <model>box_model_23</model>
+          <model>box_model_24</model>
+          <model>box_model_25</model>
+          <model>box_model_26</model>
+          <model>box_model_27</model>
+          <model>box_model_28</model>
+          <model>box_model_29</model>
+          <model>box_model_30</model>
         </ignore_obstacles>
         </plugin>
     </model>
@@ -822,9 +1060,1024 @@
           <model>box_model_12</model>
           <model>box_model_13</model>
           <model>box_model_14</model>
+          <model>box_model_16</model>
+          <model>box_model_17</model>
+          <model>box_model_18</model>
+          <model>box_model_19</model>
+          <model>box_model_20</model>
+          <model>box_model_21</model>
+          <model>box_model_22</model>
+          <model>box_model_23</model>
+          <model>box_model_24</model>
+          <model>box_model_25</model>
+          <model>box_model_26</model>
+          <model>box_model_27</model>
+          <model>box_model_28</model>
+          <model>box_model_29</model>
+          <model>box_model_30</model>
         </ignore_obstacles>
         </plugin>
     </model>
+
+
+    <model name="box_model_16">
+    <static> false </static>
+      <pose>1 1 0 0 0 0</pose>
+      <link name="box_link_16">
+       <gravity>0</gravity>
+      <collision name='collision'>
+        <geometry>
+          <box>
+            <size>.2 .2 .2</size>
+          </box>
+        </geometry>
+        <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+      </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+               <size>.2 .2 .2</size>
+             </box>
+            </geometry>
+          </visual>
+        </link>
+        <plugin name="box_16_plug" filename="libgazebo_tutorials.so">
+        <target>3 2 0.1</target>
+        <target_weight>1.15</target_weight>
+        <obstacle_weight>1.8</obstacle_weight>
+        <ignore_obstacles>
+          <model>ground_plane</model>
+          <model>turtlebot3_burger</model>
+          <model>box_model</model>
+          <model>box_model_2</model>
+          <model>box_model_3</model>
+          <model>box_model_4</model>
+          <model>box_model_5</model>
+          <model>box_model_6</model>
+          <model>box_model_7</model>
+          <model>box_model_8</model>
+          <model>box_model_9</model>
+          <model>box_model_10</model>
+          <model>box_model_11</model>
+          <model>box_model_12</model>
+          <model>box_model_13</model>
+          <model>box_model_14</model>
+          <model>box_model_15</model>
+          <model>box_model_17</model>
+          <model>box_model_18</model>
+          <model>box_model_19</model>
+          <model>box_model_20</model>
+          <model>box_model_21</model>
+          <model>box_model_22</model>
+          <model>box_model_23</model>
+          <model>box_model_24</model>
+          <model>box_model_25</model>
+          <model>box_model_26</model>
+          <model>box_model_27</model>
+          <model>box_model_28</model>
+          <model>box_model_29</model>
+          <model>box_model_30</model>
+        </ignore_obstacles>
+        </plugin>
+    </model>
+
+
+
+    <model name="box_model_17">
+    <static> false </static>
+      <pose>1 1 0 0 0 0</pose>
+      <link name="box_link_17">
+       <gravity>0</gravity>
+      <collision name='collision'>
+        <geometry>
+          <box>
+            <size>.2 .2 .2</size>
+          </box>
+        </geometry>
+        <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+      </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+               <size>.2 .2 .2</size>
+             </box>
+            </geometry>
+          </visual>
+        </link>
+        <plugin name="box_17_plug" filename="libgazebo_tutorials.so">
+        <target>3 2 0.1</target>
+        <target_weight>1.15</target_weight>
+        <obstacle_weight>1.8</obstacle_weight>
+        <ignore_obstacles>
+          <model>ground_plane</model>
+          <model>turtlebot3_burger</model>
+          <model>box_model</model>
+          <model>box_model_2</model>
+          <model>box_model_3</model>
+          <model>box_model_4</model>
+          <model>box_model_5</model>
+          <model>box_model_6</model>
+          <model>box_model_7</model>
+          <model>box_model_8</model>
+          <model>box_model_9</model>
+          <model>box_model_10</model>
+          <model>box_model_11</model>
+          <model>box_model_12</model>
+          <model>box_model_13</model>
+          <model>box_model_14</model>
+          <model>box_model_15</model>
+          <model>box_model_16</model>
+          <model>box_model_17</model>
+          <model>box_model_18</model>
+          <model>box_model_19</model>
+          <model>box_model_20</model>
+          <model>box_model_21</model>
+          <model>box_model_22</model>
+          <model>box_model_23</model>
+          <model>box_model_24</model>
+          <model>box_model_25</model>
+          <model>box_model_26</model>
+          <model>box_model_27</model>
+          <model>box_model_28</model>
+          <model>box_model_29</model>
+          <model>box_model_30</model>
+        </ignore_obstacles>
+        </plugin>
+    </model>
+
+
+    <model name="box_model_18">
+    <static> false </static>
+      <pose>1 1 0 0 0 0</pose>
+      <link name="box_link_18">
+       <gravity>0</gravity>
+      <collision name='collision'>
+        <geometry>
+          <box>
+            <size>.2 .2 .2</size>
+          </box>
+        </geometry>
+        <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+      </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+               <size>.2 .2 .2</size>
+             </box>
+            </geometry>
+          </visual>
+        </link>
+        <plugin name="box_18_plug" filename="libgazebo_tutorials.so">
+        <target>3 2 0.1</target>
+        <target_weight>1.15</target_weight>
+        <obstacle_weight>1.8</obstacle_weight>
+        <ignore_obstacles>
+          <model>ground_plane</model>
+          <model>turtlebot3_burger</model>
+          <model>box_model</model>
+          <model>box_model_2</model>
+          <model>box_model_3</model>
+          <model>box_model_4</model>
+          <model>box_model_5</model>
+          <model>box_model_6</model>
+          <model>box_model_7</model>
+          <model>box_model_8</model>
+          <model>box_model_9</model>
+          <model>box_model_10</model>
+          <model>box_model_11</model>
+          <model>box_model_12</model>
+          <model>box_model_13</model>
+          <model>box_model_14</model>
+          <model>box_model_15</model>
+          <model>box_model_16</model>
+          <model>box_model_17</model>
+          <model>box_model_19</model>
+          <model>box_model_20</model>
+          <model>box_model_21</model>
+          <model>box_model_22</model>
+          <model>box_model_23</model>
+          <model>box_model_24</model>
+          <model>box_model_25</model>
+          <model>box_model_26</model>
+          <model>box_model_27</model>
+          <model>box_model_28</model>
+          <model>box_model_29</model>
+          <model>box_model_30</model>
+        </ignore_obstacles>
+        </plugin>
+    </model>
+
+
+    <model name="box_model_19">
+    <static> false </static>
+      <pose>1 1 0 0 0 0</pose>
+      <link name="box_link_19">
+       <gravity>0</gravity>
+      <collision name='collision'>
+        <geometry>
+          <box>
+            <size>.2 .2 .2</size>
+          </box>
+        </geometry>
+        <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+      </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+               <size>.2 .2 .2</size>
+             </box>
+            </geometry>
+          </visual>
+        </link>
+        <plugin name="box_19_plug" filename="libgazebo_tutorials.so">
+        <target>3 2 0.1</target>
+        <target_weight>1.15</target_weight>
+        <obstacle_weight>1.8</obstacle_weight>
+        <ignore_obstacles>
+          <model>ground_plane</model>
+          <model>turtlebot3_burger</model>
+          <model>box_model</model>
+          <model>box_model_2</model>
+          <model>box_model_3</model>
+          <model>box_model_4</model>
+          <model>box_model_5</model>
+          <model>box_model_6</model>
+          <model>box_model_7</model>
+          <model>box_model_8</model>
+          <model>box_model_9</model>
+          <model>box_model_10</model>
+          <model>box_model_11</model>
+          <model>box_model_12</model>
+          <model>box_model_13</model>
+          <model>box_model_14</model>
+          <model>box_model_15</model>
+          <model>box_model_16</model>
+          <model>box_model_17</model>
+          <model>box_model_18</model>
+          <model>box_model_20</model>
+          <model>box_model_21</model>
+          <model>box_model_22</model>
+          <model>box_model_23</model>
+          <model>box_model_24</model>
+          <model>box_model_25</model>
+          <model>box_model_26</model>
+          <model>box_model_27</model>
+          <model>box_model_28</model>
+          <model>box_model_29</model>
+          <model>box_model_30</model>
+        </ignore_obstacles>
+        </plugin>
+    </model>
+
+
+
+    <model name="box_model_20">
+    <static> false </static>
+      <pose>1 1 0 0 0 0</pose>
+      <link name="box_link_20">
+       <gravity>0</gravity>
+      <collision name='collision'>
+        <geometry>
+          <box>
+            <size>.2 .2 .2</size>
+          </box>
+        </geometry>
+        <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+      </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+               <size>.2 .2 .2</size>
+             </box>
+            </geometry>
+          </visual>
+        </link>
+        <plugin name="box_20_plug" filename="libgazebo_tutorials.so">
+        <target>3 2 0.1</target>
+        <target_weight>1.15</target_weight>
+        <obstacle_weight>1.8</obstacle_weight>
+        <ignore_obstacles>
+          <model>ground_plane</model>
+          <model>turtlebot3_burger</model>
+          <model>box_model</model>
+          <model>box_model_2</model>
+          <model>box_model_3</model>
+          <model>box_model_4</model>
+          <model>box_model_5</model>
+          <model>box_model_6</model>
+          <model>box_model_7</model>
+          <model>box_model_8</model>
+          <model>box_model_9</model>
+          <model>box_model_10</model>
+          <model>box_model_11</model>
+          <model>box_model_12</model>
+          <model>box_model_13</model>
+          <model>box_model_14</model>
+          <model>box_model_15</model>
+          <model>box_model_16</model>
+          <model>box_model_17</model>
+          <model>box_model_18</model>
+          <model>box_model_19</model>
+          <model>box_model_21</model>
+          <model>box_model_22</model>
+          <model>box_model_23</model>
+          <model>box_model_24</model>
+          <model>box_model_25</model>
+          <model>box_model_26</model>
+          <model>box_model_27</model>
+          <model>box_model_28</model>
+          <model>box_model_29</model>
+          <model>box_model_30</model>
+        </ignore_obstacles>
+        </plugin>
+    </model>
+
+
+    <model name="box_model_21">
+    <static> false </static>
+      <pose>1 1 0 0 0 0</pose>
+      <link name="box_link_21">
+       <gravity>0</gravity>
+      <collision name='collision'>
+        <geometry>
+          <box>
+            <size>.2 .2 .2</size>
+          </box>
+        </geometry>
+        <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+      </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+               <size>.2 .2 .2</size>
+             </box>
+            </geometry>
+          </visual>
+        </link>
+        <plugin name="box_21_plug" filename="libgazebo_tutorials.so">
+        <target>3 2 0.1</target>
+        <target_weight>1.15</target_weight>
+        <obstacle_weight>1.8</obstacle_weight>
+        <ignore_obstacles>
+          <model>ground_plane</model>
+          <model>turtlebot3_burger</model>
+          <model>box_model</model>
+          <model>box_model_2</model>
+          <model>box_model_3</model>
+          <model>box_model_4</model>
+          <model>box_model_5</model>
+          <model>box_model_6</model>
+          <model>box_model_7</model>
+          <model>box_model_8</model>
+          <model>box_model_9</model>
+          <model>box_model_10</model>
+          <model>box_model_11</model>
+          <model>box_model_12</model>
+          <model>box_model_13</model>
+          <model>box_model_14</model>
+          <model>box_model_15</model>
+          <model>box_model_16</model>
+          <model>box_model_17</model>
+          <model>box_model_18</model>
+          <model>box_model_19</model>
+          <model>box_model_20</model>
+          <model>box_model_22</model>
+          <model>box_model_23</model>
+          <model>box_model_24</model>
+          <model>box_model_25</model>
+          <model>box_model_26</model>
+          <model>box_model_27</model>
+          <model>box_model_28</model>
+          <model>box_model_29</model>
+          <model>box_model_30</model>
+        </ignore_obstacles>
+        </plugin>
+    </model>
+
+
+
+    <model name="box_model_22">
+    <static> false </static>
+      <pose>1 1 0 0 0 0</pose>
+      <link name="box_link_22">
+       <gravity>0</gravity>
+      <collision name='collision'>
+        <geometry>
+          <box>
+            <size>.2 .2 .2</size>
+          </box>
+        </geometry>
+        <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+      </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+               <size>.2 .2 .2</size>
+             </box>
+            </geometry>
+          </visual>
+        </link>
+        <plugin name="box_22_plug" filename="libgazebo_tutorials.so">
+        <target>3 2 0.1</target>
+        <target_weight>1.15</target_weight>
+        <obstacle_weight>1.8</obstacle_weight>
+        <ignore_obstacles>
+          <model>ground_plane</model>
+          <model>turtlebot3_burger</model>
+          <model>box_model</model>
+          <model>box_model_2</model>
+          <model>box_model_3</model>
+          <model>box_model_4</model>
+          <model>box_model_5</model>
+          <model>box_model_6</model>
+          <model>box_model_7</model>
+          <model>box_model_8</model>
+          <model>box_model_9</model>
+          <model>box_model_10</model>
+          <model>box_model_11</model>
+          <model>box_model_12</model>
+          <model>box_model_13</model>
+          <model>box_model_14</model>
+          <model>box_model_15</model>
+          <model>box_model_16</model>
+          <model>box_model_17</model>
+          <model>box_model_18</model>
+          <model>box_model_19</model>
+          <model>box_model_20</model>
+          <model>box_model_21</model>
+          <model>box_model_23</model>
+          <model>box_model_24</model>
+          <model>box_model_25</model>
+          <model>box_model_26</model>
+          <model>box_model_27</model>
+          <model>box_model_28</model>
+          <model>box_model_29</model>
+          <model>box_model_30</model>
+        </ignore_obstacles>
+        </plugin>
+    </model>
+
+
+    <model name="box_model_23">
+    <static> false </static>
+      <pose>1 1 0 0 0 0</pose>
+      <link name="box_link_23">
+       <gravity>0</gravity>
+      <collision name='collision'>
+        <geometry>
+          <box>
+            <size>.2 .2 .2</size>
+          </box>
+        </geometry>
+        <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+      </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+               <size>.2 .2 .2</size>
+             </box>
+            </geometry>
+          </visual>
+        </link>
+        <plugin name="box_23_plug" filename="libgazebo_tutorials.so">
+        <target>3 2 0.1</target>
+        <target_weight>1.15</target_weight>
+        <obstacle_weight>1.8</obstacle_weight>
+        <ignore_obstacles>
+          <model>ground_plane</model>
+          <model>turtlebot3_burger</model>
+          <model>box_model</model>
+          <model>box_model_2</model>
+          <model>box_model_3</model>
+          <model>box_model_4</model>
+          <model>box_model_5</model>
+          <model>box_model_6</model>
+          <model>box_model_7</model>
+          <model>box_model_8</model>
+          <model>box_model_9</model>
+          <model>box_model_10</model>
+          <model>box_model_11</model>
+          <model>box_model_12</model>
+          <model>box_model_13</model>
+          <model>box_model_14</model>
+          <model>box_model_15</model>
+          <model>box_model_16</model>
+          <model>box_model_17</model>
+          <model>box_model_18</model>
+          <model>box_model_19</model>
+          <model>box_model_20</model>
+          <model>box_model_21</model>
+          <model>box_model_22</model>
+          <model>box_model_24</model>
+          <model>box_model_25</model>
+          <model>box_model_26</model>
+          <model>box_model_27</model>
+          <model>box_model_28</model>
+          <model>box_model_29</model>
+          <model>box_model_30</model>
+        </ignore_obstacles>
+        </plugin>
+    </model>
+
+
+
+    <model name="box_model_24">
+    <static> false </static>
+      <pose>1 1 0 0 0 0</pose>
+      <link name="box_link_24">
+       <gravity>0</gravity>
+      <collision name='collision'>
+        <geometry>
+          <box>
+            <size>.2 .2 .2</size>
+          </box>
+        </geometry>
+        <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+      </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+               <size>.2 .2 .2</size>
+             </box>
+            </geometry>
+          </visual>
+        </link>
+        <plugin name="box_24_plug" filename="libgazebo_tutorials.so">
+        <target>3 2 0.1</target>
+        <target_weight>1.15</target_weight>
+        <obstacle_weight>1.8</obstacle_weight>
+        <ignore_obstacles>
+          <model>ground_plane</model>
+          <model>turtlebot3_burger</model>
+          <model>box_model</model>
+          <model>box_model_2</model>
+          <model>box_model_3</model>
+          <model>box_model_4</model>
+          <model>box_model_5</model>
+          <model>box_model_6</model>
+          <model>box_model_7</model>
+          <model>box_model_8</model>
+          <model>box_model_9</model>
+          <model>box_model_10</model>
+          <model>box_model_11</model>
+          <model>box_model_12</model>
+          <model>box_model_13</model>
+          <model>box_model_14</model>
+          <model>box_model_15</model>
+          <model>box_model_16</model>
+          <model>box_model_17</model>
+          <model>box_model_18</model>
+          <model>box_model_19</model>
+          <model>box_model_20</model>
+          <model>box_model_21</model>
+          <model>box_model_22</model>
+          <model>box_model_23</model>
+          <model>box_model_25</model>
+          <model>box_model_26</model>
+          <model>box_model_27</model>
+          <model>box_model_28</model>
+          <model>box_model_29</model>
+          <model>box_model_30</model>
+        </ignore_obstacles>
+        </plugin>
+    </model>
+
+
+
+    <model name="box_model_25">
+    <static> false </static>
+      <pose>1 1 0 0 0 0</pose>
+      <link name="box_link_25">
+       <gravity>0</gravity>
+      <collision name='collision'>
+        <geometry>
+          <box>
+            <size>.2 .2 .2</size>
+          </box>
+        </geometry>
+        <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+      </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+               <size>.2 .2 .2</size>
+             </box>
+            </geometry>
+          </visual>
+        </link>
+        <plugin name="box_25_plug" filename="libgazebo_tutorials.so">
+        <target>3 2 0.1</target>
+        <target_weight>1.15</target_weight>
+        <obstacle_weight>1.8</obstacle_weight>
+        <ignore_obstacles>
+          <model>ground_plane</model>
+          <model>turtlebot3_burger</model>
+          <model>box_model</model>
+          <model>box_model_2</model>
+          <model>box_model_3</model>
+          <model>box_model_4</model>
+          <model>box_model_5</model>
+          <model>box_model_6</model>
+          <model>box_model_7</model>
+          <model>box_model_8</model>
+          <model>box_model_9</model>
+          <model>box_model_10</model>
+          <model>box_model_11</model>
+          <model>box_model_12</model>
+          <model>box_model_13</model>
+          <model>box_model_14</model>
+          <model>box_model_15</model>
+          <model>box_model_16</model>
+          <model>box_model_17</model>
+          <model>box_model_18</model>
+          <model>box_model_19</model>
+          <model>box_model_20</model>
+          <model>box_model_21</model>
+          <model>box_model_22</model>
+          <model>box_model_23</model>
+          <model>box_model_24</model>
+          <model>box_model_26</model>
+          <model>box_model_27</model>
+          <model>box_model_28</model>
+          <model>box_model_29</model>
+          <model>box_model_30</model>
+        </ignore_obstacles>
+        </plugin>
+    </model>
+
+
+    <model name="box_model_26">
+    <static> false </static>
+      <pose>1 1 0 0 0 0</pose>
+      <link name="box_link_26">
+       <gravity>0</gravity>
+      <collision name='collision'>
+        <geometry>
+          <box>
+            <size>.2 .2 .2</size>
+          </box>
+        </geometry>
+        <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+      </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+               <size>.2 .2 .2</size>
+             </box>
+            </geometry>
+          </visual>
+        </link>
+        <plugin name="box_26_plug" filename="libgazebo_tutorials.so">
+        <target>3 2 0.1</target>
+        <target_weight>1.15</target_weight>
+        <obstacle_weight>1.8</obstacle_weight>
+        <ignore_obstacles>
+          <model>ground_plane</model>
+          <model>turtlebot3_burger</model>
+          <model>box_model</model>
+          <model>box_model_2</model>
+          <model>box_model_3</model>
+          <model>box_model_4</model>
+          <model>box_model_5</model>
+          <model>box_model_6</model>
+          <model>box_model_7</model>
+          <model>box_model_8</model>
+          <model>box_model_9</model>
+          <model>box_model_10</model>
+          <model>box_model_11</model>
+          <model>box_model_12</model>
+          <model>box_model_13</model>
+          <model>box_model_14</model>
+          <model>box_model_15</model>
+          <model>box_model_16</model>
+          <model>box_model_17</model>
+          <model>box_model_18</model>
+          <model>box_model_19</model>
+          <model>box_model_20</model>
+          <model>box_model_21</model>
+          <model>box_model_22</model>
+          <model>box_model_23</model>
+          <model>box_model_24</model>
+          <model>box_model_25</model>
+          <model>box_model_27</model>
+          <model>box_model_28</model>
+          <model>box_model_29</model>
+          <model>box_model_30</model>
+        </ignore_obstacles>
+        </plugin>
+    </model>
+
+
+
+    <model name="box_model_27">
+    <static> false </static>
+      <pose>1 1 0 0 0 0</pose>
+      <link name="box_link_27">
+       <gravity>0</gravity>
+      <collision name='collision'>
+        <geometry>
+          <box>
+            <size>.2 .2 .2</size>
+          </box>
+        </geometry>
+        <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+      </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+               <size>.2 .2 .2</size>
+             </box>
+            </geometry>
+          </visual>
+        </link>
+        <plugin name="box_27_plug" filename="libgazebo_tutorials.so">
+        <target>3 2 0.1</target>
+        <target_weight>1.15</target_weight>
+        <obstacle_weight>1.8</obstacle_weight>
+        <ignore_obstacles>
+          <model>ground_plane</model>
+          <model>turtlebot3_burger</model>
+          <model>box_model</model>
+          <model>box_model_2</model>
+          <model>box_model_3</model>
+          <model>box_model_4</model>
+          <model>box_model_5</model>
+          <model>box_model_6</model>
+          <model>box_model_7</model>
+          <model>box_model_8</model>
+          <model>box_model_9</model>
+          <model>box_model_10</model>
+          <model>box_model_11</model>
+          <model>box_model_12</model>
+          <model>box_model_13</model>
+          <model>box_model_14</model>
+          <model>box_model_15</model>
+          <model>box_model_16</model>
+          <model>box_model_17</model>
+          <model>box_model_18</model>
+          <model>box_model_19</model>
+          <model>box_model_20</model>
+          <model>box_model_21</model>
+          <model>box_model_22</model>
+          <model>box_model_23</model>
+          <model>box_model_24</model>
+          <model>box_model_25</model>
+          <model>box_model_26</model>
+          <model>box_model_28</model>
+          <model>box_model_29</model>
+          <model>box_model_30</model>
+        </ignore_obstacles>
+        </plugin>
+    </model>
+
+
+    <model name="box_model_28">
+    <static> false </static>
+      <pose>1 1 0 0 0 0</pose>
+      <link name="box_link_28">
+       <gravity>0</gravity>
+      <collision name='collision'>
+        <geometry>
+          <box>
+            <size>.2 .2 .2</size>
+          </box>
+        </geometry>
+        <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+      </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+               <size>.2 .2 .2</size>
+             </box>
+            </geometry>
+          </visual>
+        </link>
+        <plugin name="box_28_plug" filename="libgazebo_tutorials.so">
+        <target>3 2 0.1</target>
+        <target_weight>1.15</target_weight>
+        <obstacle_weight>1.8</obstacle_weight>
+        <ignore_obstacles>
+          <model>ground_plane</model>
+          <model>turtlebot3_burger</model>
+          <model>box_model</model>
+          <model>box_model_2</model>
+          <model>box_model_3</model>
+          <model>box_model_4</model>
+          <model>box_model_5</model>
+          <model>box_model_6</model>
+          <model>box_model_7</model>
+          <model>box_model_8</model>
+          <model>box_model_9</model>
+          <model>box_model_10</model>
+          <model>box_model_11</model>
+          <model>box_model_12</model>
+          <model>box_model_13</model>
+          <model>box_model_14</model>
+          <model>box_model_15</model>
+          <model>box_model_16</model>
+          <model>box_model_17</model>
+          <model>box_model_18</model>
+          <model>box_model_19</model>
+          <model>box_model_20</model>
+          <model>box_model_21</model>
+          <model>box_model_22</model>
+          <model>box_model_23</model>
+          <model>box_model_24</model>
+          <model>box_model_25</model>
+          <model>box_model_26</model>
+          <model>box_model_27</model>
+          <model>box_model_29</model>
+          <model>box_model_30</model>
+        </ignore_obstacles>
+        </plugin>
+    </model>
+
+
+
+    <model name="box_model_29">
+    <static> false </static>
+      <pose>1 1 0 0 0 0</pose>
+      <link name="box_link_29">
+       <gravity>0</gravity>
+      <collision name='collision'>
+        <geometry>
+          <box>
+            <size>.2 .2 .2</size>
+          </box>
+        </geometry>
+        <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+      </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+               <size>.2 .2 .2</size>
+             </box>
+            </geometry>
+          </visual>
+        </link>
+        <plugin name="box_29_plug" filename="libgazebo_tutorials.so">
+        <target>3 2 0.1</target>
+        <target_weight>1.15</target_weight>
+        <obstacle_weight>1.8</obstacle_weight>
+        <ignore_obstacles>
+          <model>ground_plane</model>
+          <model>turtlebot3_burger</model>
+          <model>box_model</model>
+          <model>box_model_2</model>
+          <model>box_model_3</model>
+          <model>box_model_4</model>
+          <model>box_model_5</model>
+          <model>box_model_6</model>
+          <model>box_model_7</model>
+          <model>box_model_8</model>
+          <model>box_model_9</model>
+          <model>box_model_10</model>
+          <model>box_model_11</model>
+          <model>box_model_12</model>
+          <model>box_model_13</model>
+          <model>box_model_14</model>
+          <model>box_model_15</model>
+          <model>box_model_16</model>
+          <model>box_model_17</model>
+          <model>box_model_18</model>
+          <model>box_model_19</model>
+          <model>box_model_20</model>
+          <model>box_model_21</model>
+          <model>box_model_22</model>
+          <model>box_model_23</model>
+          <model>box_model_24</model>
+          <model>box_model_25</model>
+          <model>box_model_26</model>
+          <model>box_model_27</model>
+          <model>box_model_28</model>
+          <model>box_model_30</model>
+        </ignore_obstacles>
+        </plugin>
+    </model>
+
+
+
+    <model name="box_model_30">
+    <static> false </static>
+      <pose>1 1 0 0 0 0</pose>
+      <link name="box_link_30">
+       <gravity>0</gravity>
+      <collision name='collision'>
+        <geometry>
+          <box>
+            <size>.2 .2 .2</size>
+          </box>
+        </geometry>
+        <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+      </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+               <size>.2 .2 .2</size>
+             </box>
+            </geometry>
+          </visual>
+        </link>
+        <plugin name="box_30_plug" filename="libgazebo_tutorials.so">
+        <target>3 2 0.1</target>
+        <target_weight>1.15</target_weight>
+        <obstacle_weight>1.8</obstacle_weight>
+        <ignore_obstacles>
+          <model>ground_plane</model>
+          <model>turtlebot3_burger</model>
+          <model>box_model</model>
+          <model>box_model_2</model>
+          <model>box_model_3</model>
+          <model>box_model_4</model>
+          <model>box_model_5</model>
+          <model>box_model_6</model>
+          <model>box_model_7</model>
+          <model>box_model_8</model>
+          <model>box_model_9</model>
+          <model>box_model_10</model>
+          <model>box_model_11</model>
+          <model>box_model_12</model>
+          <model>box_model_13</model>
+          <model>box_model_14</model>
+          <model>box_model_15</model>
+          <model>box_model_16</model>
+          <model>box_model_17</model>
+          <model>box_model_18</model>
+          <model>box_model_19</model>
+          <model>box_model_20</model>
+          <model>box_model_21</model>
+          <model>box_model_22</model>
+          <model>box_model_23</model>
+          <model>box_model_24</model>
+          <model>box_model_25</model>
+          <model>box_model_26</model>
+          <model>box_model_27</model>
+          <model>box_model_28</model>
+          <model>box_model_29</model>
+        </ignore_obstacles>
+        </plugin>
+    </model>
+    -->
 
     <plugin name="gazebo_tutorials" filename="libgazebo_tutorials.so"/>
   </world>

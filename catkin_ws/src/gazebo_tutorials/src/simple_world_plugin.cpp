@@ -58,7 +58,7 @@ namespace gazebo
     /////////////////////////////////////////////////
     void Reset()
     {
-      this->velocity = 0.8;
+      this->velocity = 0.5;
       this->lastUpdate = 0;
 
       // if (this->sdf && this->sdf->HasElement("target"))
@@ -75,8 +75,8 @@ namespace gazebo
       ignition::math::Vector3d newTarget(this->target);
       while ((newTarget - this->target).Length() < 2.0)
       {
-        newTarget.X(ignition::math::Rand::DblUniform(-11, 11));
-        newTarget.Y(ignition::math::Rand::DblUniform(-11, 11));
+        newTarget.X(ignition::math::Rand::DblUniform(-box_boundary, box_boundary));
+        newTarget.Y(ignition::math::Rand::DblUniform(-box_boundary, box_boundary));
 
         for (unsigned int i = 0; i < this->world->ModelCount(); ++i)
         {
@@ -158,8 +158,8 @@ namespace gazebo
       }
 
       // Make sure the model stays within bounds
-      pose.Pos().X(std::max(-11.0, std::min(11.0, pose.Pos().X())));
-      pose.Pos().Y(std::max(-11.0, std::min(11.0, pose.Pos().Y())));
+      pose.Pos().X(std::max(-box_boundary, std::min(box_boundary, pose.Pos().X())));
+      pose.Pos().Y(std::max(-box_boundary, std::min(box_boundary, pose.Pos().Y())));
       pose.Pos().Z(0.1);
 
       // Distance traveled is used to coordinate motion with the walking
@@ -173,6 +173,7 @@ namespace gazebo
 
     // Pointer to the model
   private:
+    static constexpr const double box_boundary = 4.5;
     physics::ModelPtr model;
     physics::WorldPtr world;
     sdf::ElementPtr sdf;
