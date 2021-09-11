@@ -17,6 +17,6 @@ This project has been implemented for University of Bristol MSc Robotics Dissert
 
 **Gazebo simulation demonstration**
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/Frkncm/Gazebo_design/tree/master/images/gazebo_example_image.png?raw=true)
 
 
