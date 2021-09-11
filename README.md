@@ -1,4 +1,4 @@
-# REMOTE ROBOT CONTROL MECHANISM USING A PHYSIOLOGICAL SENSOR - Gazebo Design
+# REMOTE ROBOT CONTROL MECHANISM USING A PHYSIOLOGICAL SENSOR - Gazebo Simulation
 
 This project has been implemented for University of Bristol MSc Robotics Dissertation module under the supervision of Alex Smith and Anouk Van Maris.
 
